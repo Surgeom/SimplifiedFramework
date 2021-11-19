@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{%block menu %}
+{% include "menu.html"%}
+{% endblock %}
+{%block content%}
+<div class="content">
+    <div class="registration">
+        <form class="registration1" method="post">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" name="name" placeholder="Ваше Имя" aria-label="Username"
+                       aria-describedby="basic-addon1">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" name="mail" id="exampleFormControlInput1"
+                       placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Ваш отзыв</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="comment" rows="3"></textarea>
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Отправить отзыв</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
